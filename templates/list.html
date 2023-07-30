@@ -36,28 +36,7 @@
     </div>
     </nav>
     <br>
-    <h1 style="text-align: center; color: blueviolet;">Popular Books Worldwide</h1>
-    <div class="container">
-      <div class="row">
-          
-
-          {% for i in range(book_name|length) %}
-              <div class="col-md-3" style="margin-top:50px">
-                  <div class="card">
-                      <div class="card-body">
-                          <img class="card-img-top" src="{{ image[i] }}">
-                          <p class="text-black">{{ book_name[i] }}</p>
-                          <h4 class="text-black">{{ author[i] }}</h4>
-                          <h4 class="text-black">Votes - {{ votes[i] }}</h4>
-                          <h4 class="text-black">Rating - {{ rating[i] }}</h4>
-                      </div>
-                  </div>
-              </div>
-          {% endfor %}
-
-
-      </div>
-  </div>
+    
 
 </nav>
 </body>
