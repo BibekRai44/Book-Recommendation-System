@@ -3,10 +3,10 @@ import pickle
 import numpy as np
 import pandas as pd
 
-popular_df = pd.compat.pickle_compat.load(open('model/popular_df.pkl','rb'))
-pt = pd.compat.pickle_compat.load(open('model/pt.pkl','rb'))
-books = pd.compat.pickle_compat.load(open('model/books.pkl','rb'))
-similarity_scores = pd.compat.pickle_compat.load(open('model/similarity_scores.pkl','rb'))
+popular_df = pickle.load(open('model/popular_df.pkl','rb'))
+pt = pickle.load(open('model/pt.pkl','rb'))
+books = pickle.load(open('model/books.pkl','rb'))
+similarity_scores = pickle.load(open('model/similarity_scores.pkl','rb'))
 
 app = Flask(__name__)
 
